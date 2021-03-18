@@ -1,64 +1,3 @@
-//type checking
-let country = "bangladesh";
-country = "10";
-console.log(country);
-
-//array
-let friends = ["sakib", "rakib", "sumon"];
-friends.push("10");
-friends.push("sakib");
-console.log(friends);
-
-//function
-const addNumber = (num1: number, num2: number) => {
-  return num1 + num2;
-};
-console.log(addNumber(10, 20));
-
-//object
-let fruits = {
-  price: 10,
-  color: "green",
-  fruitName: "apple",
-};
-fruits.price = 100;
-console.log(fruits);
-
-//explicit and union type
-let a: string | number;
-a = 5;
-console.log(a);
-
-let arr: (string | number)[] = [];
-arr.push("rakib");
-console.log(arr);
-
-let car: {
-  name: string;
-  price: number;
-};
-car = {
-  name: "bmw",
-  price: 10,
-};
-console.log(car);
-
-//dynamic type or any
-let carPrice: any;
-carPrice = 50;
-console.log(carPrice);
-
-let cycle: any = [];
-cycle.push("cyna");
-
-let bike: {
-  name: any;
-  price: any;
-};
-bike = {
-  name: 5,
-  price: "66",
-};
 
 //Function and optional function argument
 let subNumber: Function;
@@ -74,35 +13,7 @@ const myFunc = (
 };
 myFunc("10", 20, "sakib");
 
-//type aliases
-type stringOrNum = string | number;
-type userType = { name: string; age: number };
-const userDetails = (id: stringOrNum, user: userType) => {
-  console.log(
-    `your id is ${id}  and  your name is ${user.name} and age is ${user.age}`
-  );
-};
-const details = { name: "kite", age: 10 };
-userDetails(10, { name: "kite", age: 10 });
-
-//function signature
-let myFunck: (num1: number, num2: number) => number;
-myFunck = (a: number, b: number) => {
-  return a + b;
-};
-
-let calculation: (num1: number, num2: number, total: number) => number;
-calculation = (x: number, y: number, z: number) => {
-  if (x > y) {
-    return x + y;
-  } else {
-    return x - y;
-  }
-};
-console.log(calculation(10, 20, 30));
-
 // classes and custom class type and access modifier
-
 // class Players {
 //   public name: string;
 //   private age: number;
@@ -197,7 +108,3 @@ const response1: ApiResponse<object> = {
   },
 };
 console.log(response1);
-
-//tuples
-const arr2: [string, number, object] = ["test", 100, { a: 100 }];
-console.log(arr2);

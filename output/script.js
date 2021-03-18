@@ -1,49 +1,3 @@
-//type checking
-let country = "bangladesh";
-country = "10";
-console.log(country);
-//array
-let friends = ["sakib", "rakib", "sumon"];
-friends.push("10");
-friends.push("sakib");
-console.log(friends);
-//function
-const addNumber = (num1, num2) => {
-    return num1 + num2;
-};
-console.log(addNumber(10, 20));
-//object
-let fruits = {
-    price: 10,
-    color: "green",
-    fruitName: "apple",
-};
-fruits.price = 100;
-console.log(fruits);
-//explicit and union type
-let a;
-a = 5;
-console.log(a);
-let arr = [];
-arr.push("rakib");
-console.log(arr);
-let car;
-car = {
-    name: "bmw",
-    price: 10,
-};
-console.log(car);
-//dynamic type or any
-let carPrice;
-carPrice = 50;
-console.log(carPrice);
-let cycle = [];
-cycle.push("cyna");
-let bike;
-bike = {
-    name: 5,
-    price: "66",
-};
 //Function and optional function argument
 let subNumber;
 const myFunc = (b, a, c = "true", d) => {
@@ -52,26 +6,6 @@ const myFunc = (b, a, c = "true", d) => {
     return a + b;
 };
 myFunc("10", 20, "sakib");
-const userDetails = (id, user) => {
-    console.log(`your id is ${id}  and  your name is ${user.name} and age is ${user.age}`);
-};
-const details = { name: "kite", age: 10 };
-userDetails(10, { name: "kite", age: 10 });
-//function signature
-let myFunck;
-myFunck = (a, b) => {
-    return a + b;
-};
-let calculation;
-calculation = (x, y, z) => {
-    if (x > y) {
-        return x + y;
-    }
-    else {
-        return x - y;
-    }
-};
-console.log(calculation(10, 20, 30));
 // classes and custom class type and access modifier
 // class Players {
 //   public name: string;
@@ -142,6 +76,3 @@ const response1 = {
     },
 };
 console.log(response1);
-//tuples
-const arr2 = ["test", 100, { a: 100 }];
-console.log(arr2);
